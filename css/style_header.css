@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+    font-family: 'Raleway';
+    font-weight:100;
+    max-width: 1366px;
+    margin: auto;
+}
+
+*{padding: 0; border: 0; margin: 0;}
+
+
+/*Begin - header*/
+
+header {
+  display: grid;
+  grid-template-rows: 73px;
+  grid-template-columns: 35% 37% 14% 14%;
+  border-bottom: solid 1px #efefef;
+}
+
+header a{
+	 font-size: 12px;
+	 color: #006621;
+	 text-decoration: none;
+}
+
+input[type=search]{outline:none;}
+
+.search{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.search input{
+    width: 80%;
+    height: 100%;
+    letter-spacing: 2px;
+    padding-left: 25px;
+    border: none;
+    float: left;
+}
+
+.search button{
+	width: 5%;
+	height: 100%;
+	background: none;
+}	
+
+.brand{
+	margin: auto;
+	grid-row: 1;
+	grid-column:2;
+}
+
+.brand img{
+	width: 355px;
+	height: 64px;
+}
+
+
+.my_account{
+	margin: auto;
+	width: 150px;
+	grid-row: 1;
+	grid-column:3;
+}
+
+.my_account img{
+	float: left;
+	margin-right: 14px
+}
+
+.car{
+	text-align: center;
+	margin: auto;
+	grid-row: 1;
+	grid-column:4;
+	width: 140px;
+}
+
+.car img{
+	float: left;
+}
+
+.qtd_item_car {
+    border-radius: 100%;
+    color: #fff;
+    background: #006621;
+    z-index: 100000;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-left: -8px;
+}
+
+/*End - header*/

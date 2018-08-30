@@ -1,0 +1,40 @@
+footer {
+  margin:0 !important;
+  display: grid;
+  grid-template-rows: 250px;
+  background: #f9f8f8;
+  grid-template-columns: 13% 16% 12% 17% 18% 24%;
+  border-bottom: solid 1px #efefef;
+}
+
+.info{
+	text-align: left;
+	padding: 15px;
+	font-size: 13px;
+	
+}
+
+.info li{
+	list-style: none;
+	margin-top: 12px;
+
+}
+
+.info li a{
+	text-decoration: none;
+	color: #6f6f6f;
+}
+
+.info ul {
+	margin-top: 1px; 
+}
+
+.text_rodape{
+	width: 90%;
+    margin: 20px	
+}
+
+.text_rodape p{
+	font-size: 12px;
+	
+}

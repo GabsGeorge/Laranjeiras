@@ -1,0 +1,289 @@
+/*Begin - Main*/
+
+.menu_category{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+}
+
+.menu_category li{
+	list-style: none;
+    padding: 15px 0px;  
+}
+
+.menu_category li a{
+	text-decoration: none;
+   	color: #000;
+   	letter-spacing: 2px;
+}
+
+.icon_menu{
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+
+.banner_low{
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0px;
+}
+
+.font_banner_low{
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+	
+	/*Begin - Slider*/
+	.trs {
+	-webkit-transition:all ease-out 0.5s;
+    -moz-transition:all ease-out 0.5s;
+    -o-transition:all ease-out 0.5s;
+    -ms-transition:all ease-out 0.5s;
+    transition:all ease-out 0.5s;
+	}  
+
+	#slider {
+		position: relative; 
+		z-index: 1;
+	}
+
+	#slider img{
+		width: 100%;
+	    height: 100%;
+	}
+
+	#slider a { position: absolute; 
+		top: 0; 
+		left: 0; 
+		opacity: 0;
+		filter:alpha(opacity=0);
+	}
+
+	.ativo {
+		opacity: 1!important; 
+		filter:alpha(opacity=100)!important;
+	}
+
+	/*controladores*/
+	.main_banner > span {
+		cursor: pointer; 
+		filter:alpha(opacity=0); 
+		position: absolute; 
+		bottom: 40%; 
+		width: 43px; 
+		height: 43px; 
+		z-index: 5;
+		color: #000;
+	}
+
+	.next {
+		right: 10px;
+	}
+
+	.next:before,.next:after {
+		left: 21px;
+	}
+	.next:before {
+	    -webkit-transform: rotate(-42deg);
+	    top: 5px;
+	}
+	.next:after {
+	    -webkit-transform: rotate(-132deg);
+	    top: 19px;
+	}
+	.next:before,.next:after,.prev:before,.prev:after {
+		content: "";
+	    height: 20px;
+	    background: #000;
+	    font-weight: bold;
+	    width: 1px;
+	    position: absolute;
+	}
+	.prev {left: 10px;}
+	.prev:before,.prev:after {left: 18px;}
+	.prev:before {
+	    -webkit-transform: rotate(42deg);
+	    top: 5px;
+	}
+	.prev:after {
+	    -webkit-transform: rotate(132deg);
+	    top: 19px;
+	}
+
+	figure {
+	    height: 399px;
+	    position: relative;
+	    overflow: hidden;
+	    width: 100%;
+	}
+
+	/*End - Slider*/
+
+
+.banner_disclosure{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+}
+
+.banner1{
+	width: 100%;
+}
+
+.banner1 img{
+    width: 99%;
+    margin: 0px 3px 0px 3px;
+}
+
+.banner2{
+	width: 100%;
+}
+
+.banner2 img{
+    width: 99%;
+    margin: 0px 3px 0px 3px;
+}
+
+main > h2{
+	margin: 10px;
+	text-align: center;
+	letter-spacing: 6px;
+	grid-row: 1;
+}
+
+.products{
+	display: grid;
+	grid-template-rows: auto auto;
+  	grid-template-columns: 33.33% 33.33% 33.33%;
+  	text-align: center;
+}
+
+.products img{
+    width: 250px;
+    height: 300px;
+}
+
+.products li {
+    text-align: center;
+    list-style: none;
+}
+
+.products li a{
+	text-decoration: none;
+}
+
+.products li p{
+	font-size: 13px;
+}
+
+.font_product_parcela{
+	color: #f58322;
+	font-size: 16px!important;
+}
+
+.about_us{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 575px;
+    max-width: 100%;
+    height: 510px;
+    margin-top: 80px;
+    background-image: url(../img/assets/bg_quemsomos.jpg);
+    background-repeat: no-repeat, repeat;
+}
+
+
+.quemsomos{
+	grid-row: 1;
+    grid-column: 2;
+    width: 400px;
+    height: 213px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: auto;
+}
+
+	/*Begin - NewsLetter*/
+
+	.news{
+		display: grid;
+		grid-template-columns: 34% 28% 28% 10%;
+		grid-template-rows: 100%;
+	    height: 115px;
+	    margin-top: 30px;
+	}
+
+	.news p{
+		grid-row: 1;
+		grid-column: 1; 
+	    text-align: center;
+    	margin: auto;
+    	font-size: 11px;
+    	color: #000;
+	}
+
+	.news span{
+		font-size: 17px!important;
+		color: #f58322;
+	}
+
+	.news input{
+		width: 85%;
+		height:40px;
+		letter-spacing: 2px;
+		padding-left: 10px;
+		font-size: 12px;
+		border:1px solid #c9c9c9;
+	}
+
+	#nome{
+		grid-row: 1;
+		grid-column:2; 
+	   	margin: auto;
+	}
+
+
+	#email{
+		grid-row: 1;
+		grid-column: 3; 
+	    margin: auto;
+	
+	}
+
+	.news button{
+		grid-row: 1;
+	    grid-column-start: 4;
+	    grid-column-end: 4;
+	    height: 35px;
+	    width: 100px;
+	    position: relative;
+	    top: 40px;
+	    background: #86e11a;
+	    border: none;
+	    margin-left: 5px;
+	    color: #fff;
+	}
+	.text_news{
+		height: 90px;
+		width: 100%;
+	}
+
+	.text_news p {
+		text-align: center;
+    	font-size: 12px;
+    	color: #000;
+    	height: 30px;
+    }	
+	/*End - NewsLetter*/
+
+
+/*End - Main*/
+
+
+	
+
+
+
